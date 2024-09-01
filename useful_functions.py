@@ -52,10 +52,12 @@ def beautify_metadata(metadata):
 19. Sampling: Refers to the physical sampling interval or the pixel spacing, often given in units of millimeters or pixels per millimeter. Here, (1.0, 1.0) suggests that the image has equal sampling in both dimensions.
 '''
 
-
-
-
-
+#plot
+import matplotlib.pyplot as plt
+plt.imshow(im, cmap = 'gray')
+plt.title('DICOM Image')
+plt.axis('off')
+plt.show()
 
 
 
